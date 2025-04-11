@@ -2,10 +2,10 @@ import cv2
 
 class Gradient:
     def __init__(self, photo):
-        self.dict: dict = dict()
-        self.loadGradientBar(photo)
+        self.dict: dict = self.loadGradientBar(photo)
+
     
-    def loadGradientBar(self, photo):
+    def loadGradientBar(self, photo) -> dict:
         # Prende la barra in basso, trasforma ogni valore HEX di colore in una corrispondente temperature
         # E la inserisci nel dizionario che sara composto da (HEX, valore in gradi)
         pass
@@ -31,3 +31,7 @@ class Photo:
 
 if __name__ == "__main__":
     photo = Photo("IR_0014.jpg")
+
+
+# Fare dei limiti per evitare le scritte:
+# Gradi, FLIR, gradient bar e "mirino"
